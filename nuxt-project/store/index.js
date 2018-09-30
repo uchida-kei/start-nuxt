@@ -15,7 +15,7 @@ const store = () => new Vuex.Store({
         async getUser ({ commit }, { id }) {
             try {
                 const user = await this.$axios.$get(
-                    'https://api.github.com/users/'+id
+                    'https://api.github.com/users/' + id
                 )
                 commit('saveUser', { user })
             } catch (e) {

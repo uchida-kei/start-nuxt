@@ -1,6 +1,9 @@
 const webpack = require('webpack')
 
 module.exports = {
+  router: {
+    middleware: ['redirector']
+  },
   /*
   ** Headers of the page
   */

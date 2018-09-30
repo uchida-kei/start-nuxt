@@ -1,7 +1,7 @@
 export default function ({ $axios }) {
     $axios.onRequest( (config) => {
         if (config.url.indexOf('api.github.com') + 1) {
-            //config.headers.Authorization = 'token 02217597ac9422769cd3de3b989e3d28a5a36347'
+            config.headers.Authorization = 'token c0cca072a658faf3bab2179ebfc78e4632228af7'
         }
     })
 }
