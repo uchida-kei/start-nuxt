@@ -2,7 +2,10 @@ const webpack = require('webpack')
 
 module.exports = {
   router: {
-    middleware: ['redirector']
+    middleware: [
+      //'redirector',
+      'auth'
+    ]
   },
   /*
   ** Headers of the page

@@ -19,6 +19,11 @@
           class="button--grey">GitHub</a>
       </div>
     </div>
+    <p>
+      <nuxt-link to="/login">
+        move to login
+      </nuxt-link>
+    </p>
   </section>
 </template>
 
@@ -63,3 +68,8 @@ export default {
 }
 </style>
 
+<style scoped>
+section {
+  margin: 16px;
+}
+</style>
